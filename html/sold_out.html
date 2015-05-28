@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block header_content %}
+{% endblock %}
+{% block page_content %}
+
+  <div id="panel-bottom" class="slidepanel bottom">
+
+    <div class="fpanel">
+             <div class="container">
+          <div class="fpanel text-center">
+            <div class="row">
+              <h2>{{ store.name }}</h2>
+            </div>
+            <div class="row">
+              <h3><img src="{{ 'images/sold-out.png' | global_asset_url }}" alt=""/></h3>
+            </div>
+            <div class="row">
+                <h2 class="h-section text-center lrg-heading-grp" data-barley="sold-out-title" data-barley-editor="simple" >Sorry, we are currently sold out.</h2>
+            </div>
+            <div class="row">
+              <p data-barley="sold-out-message" data-barley-editor="simple">We know you want {{ store.name }}, but we're at capacity for this month.  Don't worry though, because we have more goodies coming next month!<br/><br/></p>
+            </div>
+            <a type="button" class="btn btn-primary lt-btn-grp" href="/" data-barley="back_home" data-barley-editor="link">BACK TO HOMEPAGE</a>
+          </div>
+        </div>
+
+    </div><!-- /.fpanel -->
+
+  </div><!-- /.slidepanel -->
+{% endblock %}
