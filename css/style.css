@@ -78,9 +78,6 @@
 .theme-3 h2 {
   font-size: 32px;
   letter-spacing: 2px;
-
-  color: {{ settings.color_secondary_heading }};
-  font-family: {{ settings.face_secondary_heading }};
 }
 .theme-3 h3 {
   font-size: 21px;
@@ -182,7 +179,6 @@
 .theme-3 .cform .form-control {
   border-color: {{ settings.color_button }};
   font-family: {{ settings.face_form_input }};
-  background: rgba(66, 69, 74, 0.2);
 }
 .theme-3 .cform input {
   color: {{ settings.color_form_text }};
