@@ -42,7 +42,6 @@ h6 {
 }
 
 .stuff {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -70,6 +69,7 @@ div.subscribe {
 }
 
 button.subscribe {
+    font-family: Lato-Bold;
     height: 50px;
     color: #fff;
     background-color: #faa14d;
