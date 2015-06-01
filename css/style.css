@@ -3,6 +3,12 @@
   /* Form */
 }
 @font-face {
+  font-family: 'Bree-Serif';
+  src: url("{{ 'fonts/BreeSerif-Regular.otf' | asset_url }}");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Lato-Light';
   src: url("{{ 'fonts/Lato-Light.eot' | asset_url }}");
   src: url("{{ 'fonts/Lato-Light.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/Lato-Light.woff' | asset_url }}") format('woff'), url("{{ 'fonts/Lato-Light.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/Lato-Light.svg' | asset_url }}#Lato-Light") format('svg');
