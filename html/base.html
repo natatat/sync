@@ -40,7 +40,7 @@
       <div class="container">
        {% block header_content %}
        <div class="navigation">
-        <a class="link-cart" data-toggle="offcanvas show-menu">
+        <a class="link-cart green" data-toggle="offcanvas show-menu">
          Cart ({{ (cart.products | length ) + (cart.gifts | length) }})
        </a>
        {% if guest %}
@@ -74,16 +74,16 @@
 <a class="logo_link" href="/">
   <div class="heading logo" data-barley="index_brand_link" data-barley-editor="logo">
     <div class="big-logo green center"><strong>SYNC</strong></div>
-    <h2 class="green center"><strong>STUFF YOU NEED CHEAP</strong></h2>
+    <h2 class="green center bree-serif h2"><strong>STUFF YOU NEED CHEAP</strong></h2>
   </div>
   <div class="nav">
-    <ul class="nav-buttons">
-        <a href="#" class="nav-link"><li class="nav-button"><strong><em>THE STUFF</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="nav-button"><strong><em>ABOUT US</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="nav-button"><strong><em>SOCIAL</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="nav-button"><strong><em>FAQ</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="nav-button"><strong><em>BE A BRUH</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="nav-button"><strong><em>MOMS</em></strong></li></a>
+    <ul class="nav-buttons bold">
+        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>THE STUFF</em></strong></li></a>
+        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>ABOUT US</em></strong></li></a>
+        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>SOCIAL</em></strong></li></a>
+        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>FAQ</em></strong></li></a>
+        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>BE A BRUH</em></strong></li></a>
+        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>MOMS</em></strong></li></a>
     </ul>
 </a>
 {% endblock %}
@@ -93,38 +93,52 @@
 {% block page_content %}
 {% endblock %}
 <!-- FOOTER -->
-<footer class="sfooter">
+<footer class="footer">
   {% block footer_content %}
-  <div class="container">
-   <div class="row">
-    <div class="socials col-sm-4 col-sm-pull-4 col-sm-push-4">
-     <a href="#" class="icon-circle" data-barley="ftr_fb_link" data-barley-editor="link">
-      <i class="fa fa-facebook">
-      </i>
-    </a>
-    <a href="#" class="icon-circle" data-barley="ftr_insta_link" data-barley-editor="link">
-      <i class="fa fa-instagram">
-      </i>
-    </a>
-    <a href="#" class="icon-circle" data-barley="ftr_twtr_link" data-barley-editor="link">
-      <i class="fa fa-twitter">
-      </i>
-    </a>
-    <a href="#" class="icon-circle" data-barley="ftr_pint_link" data-barley-editor="link">
-      <i class="fa fa-pinterest">
-      </i>
-    </a>
-  </div>
-  <div class="copyright col-sm-4 col-sm-pull-4" data-barley="ftr_copyright" data-barley-editor="simple">
-   © 2014, All Rights Reserved.
- </div>
- <div class="creators col-sm-4">
-   <a href="http://www.cratejoy.com">
-    <img src="{{ 'images/powered_by_cratejoy.png' | asset_url }}" alt="Cratejoy"/>
-  </a>
-</div>
-</div>
-</div>
+      <div class="container">
+          <div class="row">
+              <div class="six columns">
+                  <div class="row">
+                      <div class="six columns">
+                          <ul>
+                              <li class="green"><strong>Get To Know Us</strong></li>
+                              <li class="white">About</li>
+                              <li class="white">Product</li>
+                              <li class="white">Blog</li>
+                              <li class="white">Mom Portal</li>
+                          </ul>
+                      </div>
+                      <div class="six columns">
+                          <ul>
+                              <li class="green"><strong>Follow us</strong></li>
+                              <li class="white"><a class="white" href="#" data-barley="ftr_fb_link" data-barley-editor="link">Facebook</a></li>
+                              <li class="white"><a class="white" href="#" data-barley="ftr_twtr_link" data-barley-editor="link">Twitter</a></li>
+                              <li class="white"><a class="white" href="#" data-barley="ftr_insta_link" data-barley-editor="link">Instagram</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="six columns">
+                  <div class="eight columns">
+                      <ul>
+                          <li class="green"><strong>Articles</strong></li>
+                          <li class="white">Lorem Ipsum Dolor Sit Amet</li>
+                          <li class="white">10 Etiam viverra felis sed risus aliquet</li>
+                          <li class="white">Nam sodales eu est a tempor</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <ul class="center white">
+                  <li class="inline">© SYNC 2015, All Rights Reserved</li>
+                  <li class="inline">Privacy Policy</li>
+                  <li class="inline">info@stuffyouneedcheap.com</li>
+              </ul>
+          </div>
+      </div>
 {% endblock %}
 </footer>
 <!-- /FOOTER -->
