@@ -2,6 +2,10 @@ h6 {
     font-size: 1.8rem;
 }
 
+h5 {
+    letter-spacing: 0em !important;
+}
+
 /* colors */
 .green {
     color: #8dc63f !important;
