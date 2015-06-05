@@ -126,7 +126,6 @@ button.custom:hover {
     background-color: #8dc63f !important;
     color: white !important;
 }
-
 /* end buttons */
 
 /* nav lists */
@@ -200,3 +199,7 @@ a.nav-link {
     margin-bottom: 50px;
 }
 /* end placeholders */
+
+#add_coupon_code {
+    padding-right: 70px;
+}
