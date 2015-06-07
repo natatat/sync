@@ -72,10 +72,12 @@
  {% endif %}
 </div>
 <a class="logo_link" href="/">
-  <div class="heading logo" data-barley="index_brand_link" data-barley-editor="logo">
-    <div class="big-logo green center"><strong>SYNC</strong></div>
-    <h2 class="green center bree-serif h2"><strong>STUFF YOU NEED CHEAP</strong></h2>
+  <img class="sync-logo" src="{{ 'images/sync-badge.png' | asset_url }}"/>
+  <div class="logo-container">
+      <div class="logo center"></div>
+      <h2 class="green center bree-serif h2"><strong>STUFF YOU NEED CHEAP</strong></h2>
   </div>
+</a>
   <div class="nav">
     <ul class="nav-buttons bold">
         <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>THE STUFF</em></strong></li></a>
@@ -85,7 +87,6 @@
         <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>BE A BRUH</em></strong></li></a>
         <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>MOMS</em></strong></li></a>
     </ul>
-</a>
 {% endblock %}
 </div>
 </header>
@@ -93,6 +94,7 @@
 {% block page_content %}
 {% endblock %}
 <!-- FOOTER -->
+<img class="sync-footer" src="{{ 'images/sync-footer.png' | asset_url }}"/>
 <footer class="footer">
   {% block footer_content %}
       <div class="container">
