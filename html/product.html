@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block header_class %}header-expanded slidepanel top{% endblock %}
+{% block header_bg_img %}data-width="1437" data-height="763" data-barley="index_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/banner-expanded-theme-3.jpg' | asset_url }}');"{% endblock %}
+{% block header_content %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+    <h2>The Stuff</h2>
+    <div class="subpage content">
+        <h3 class="bold">We at SYNC have an extensive background in action apparel and know the stuff you want. We work like mad dogs to understand your lifestyle and translate that into high quality amazing boxer briefs and socks, with iconic styling and branding.</h3>
+
+        <h5 class="bold">BRIEFS:</h5>
+        <div class="row">
+            <div class="eight columns center">
+                <img class="stuff-briefs" src="{{ 'images/briefs4.png' | asset_url }}"></img>
+            </div>
+        </div>
+        <h3>We have customized a fabric that is super-soft and durable, made of cotton/modal/spandex — the best combination of comfort and function that is out there. Our undies aren’t too short or too long — they are boxer briefs that don’t pull your junk. And how ‘bout those prints and branding?  You’ll make a SYNC statement.</h3>
+
+        <h5 class="bold">SOCKS:</h5>
+        <div class="row">
+            <div class="eight columns center">
+                <img class="stuff-socks" src="{{ 'images/sock1.png' | asset_url }}"></img>
+            </div>
+        </div>
+        <h3>You’re not ready for business socks all the time; in fact, most of you are still students. So we’ve come up with an athletic sock that you can wear easily with tennis shoes or topsiders. They’re made with combed cotton/poly/elastic/spandex — work out in them and bring a little style to the gym. Or pair them with your favorite pair of deck shoes and you’re good to go!</h3>
+
+        <h3 class="bold">We’ve branded SYNC to be iconic and relevant. When you’re wearing our stuff, you’re wearing it with the input of hundreds of guys just like you. Our prints and colors are bold and brash. Hey – aren’t you bold and brash too? Sounds like a match to us.</h3>
+
+        <div class="subscribe top-25">
+            <a href="/subscribe/"><button class="custom bold">SUBSCRIBE NOW</button></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

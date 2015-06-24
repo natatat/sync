@@ -37,10 +37,11 @@
     <div class="pagecontent">
      <!-- HEADER -->
      <header class="sheader">
+       <a href="/moms"><img class="hey-moms" src="{{ 'images/hey_moms.png' | asset_url }}"/></a>
       <div class="container">
        {% block header_content %}
        <div class="navigation">
-        <a class="link-cart green" data-toggle="offcanvas show-menu">
+       <a class="link-cart green" data-toggle="offcanvas show-menu">
          Cart ({{ (cart.products | length ) + (cart.gifts | length) }})
        </a>
        {% if guest %}
@@ -72,23 +73,23 @@
  {% endif %}
 </div>
 <a class="logo_link" href="/">
-  <img class="sync-logo" src="{{ 'images/sync-badge.png' | asset_url }}"/>
+  <img class="sync-logo" src="{{ 'images/sync-badge2.png' | asset_url }}"/>
   <div class="logo-container">
       <div class="logo center"></div>
       <h2 class="green center bree-serif h2"><strong>STUFF YOU NEED CHEAP</strong></h2>
   </div>
 </a>
+</div>
   <div class="nav">
     <ul class="nav-buttons bold">
-        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>THE STUFF</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>ABOUT US</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>SOCIAL</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>FAQ</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>BE A BRUH</em></strong></li></a>
-        <a href="#" class="nav-link"><li class="li-button nav-button"><strong><em>MOMS</em></strong></li></a>
+        <a href="/product" class="nav-link"><li class="li-button nav-button"><strong><em>THE STUFF</em></strong></li></a>
+        <a href="/how-it-works" class="nav-link"><li class="li-button nav-button"><strong><em>HOW IT WORKS</em></strong></li></a>
+        <a href="/squad" class="nav-link"><li class="li-button nav-button"><strong><em>JOIN THE SYNC SQUAD</em></strong></li></a>
+        <a href="/subscribe" class="nav-link"><li class="li-button nav-button"><strong><em>GIVE SYNC</em></strong></li></a>
+        <a href="/faq" class="nav-link"><li class="li-button nav-button"><strong><em>FAQ</em></strong></li></a>
     </ul>
+  </div>
 {% endblock %}
-</div>
 </header>
 <!-- /HEADER -->
 {% block page_content %}
@@ -104,23 +105,23 @@
                       <div class="six columns">
                           <ul>
                               <li class="green"><strong>Get To Know Us</strong></li>
-                              <li class="white">About</li>
-                              <li class="white">Product</li>
-                              <li class="white">Blog</li>
-                              <li class="white">Mom Portal</li>
+                              <li class="white"><a class="white" href="/product">Product</a></li>
+                              <li class="white"><a class="white" href="/how-it-works">How It Works</a></li>
+                              <li class="white"><a class="white" href="/squad">Join the SYNC Squad</a></li>
+                              <li class="white"><a class="white" href="/moms">Mom Portal</a></li>
                           </ul>
                       </div>
                       <div class="six columns">
                           <ul>
                               <li class="green"><strong>Follow us</strong></li>
-                              <li class="white"><a class="white" href="#" data-barley="ftr_fb_link" data-barley-editor="link">Facebook</a></li>
-                              <li class="white"><a class="white" href="#" data-barley="ftr_twtr_link" data-barley-editor="link">Twitter</a></li>
-                              <li class="white"><a class="white" href="#" data-barley="ftr_insta_link" data-barley-editor="link">Instagram</a></li>
+                              <li class="white"><a class="white" href="//www.facebook.com/stuffyouneedcheap" data-barley="ftr_fb_link" data-barley-editor="link">Facebook</a></li>
+                              <li class="white"><a class="white" href="//twitter.com/stuffuneedcheap" data-barley="ftr_twtr_link" data-barley-editor="link">Twitter</a></li>
+                              <li class="white"><a class="white" href="//instagram.com/stuffyouneedcheap/" data-barley="ftr_insta_link" data-barley-editor="link">Instagram</a></li>
                           </ul>
                       </div>
                   </div>
               </div>
-              <div class="six columns">
+              <div class="six columns hide">
                   <div class="eight columns">
                       <ul>
                           <li class="green"><strong>Articles</strong></li>
@@ -136,8 +137,8 @@
           <div class="row">
               <ul class="center white">
                   <li class="inline">© SYNC 2015, All Rights Reserved</li>
-                  <li class="inline">Privacy Policy</li>
-                  <li class="inline">info@stuffyouneedcheap.com</li>
+                  <li class="inline"><a class="white" href="/terms">Terms & Conditions</a></li>
+                  <li class="inline"><a class="white" href="mailto:getinsync@stuffyouneedcheap.com">getinsync@stuffyouneedcheap.com</a></li>
               </ul>
           </div>
       </div>
@@ -161,6 +162,7 @@
 {{ '/js/bootstrap.min.js' | asset_url | javascript_tag }}
 {{ '/js/offcanvas.js' | asset_url | javascript_tag }}
 {{ '/js/slidepanels.js' | asset_url | javascript_tag }}
+{{ '/js/main.js' | asset_url | javascript_tag }}
 <!-- Any page specific javascript can be included in your child templates in a page_javascript block -->
 {% block page_javascript %}
 {% endblock %}

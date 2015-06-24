@@ -1,0 +1,1 @@
+$('#id_coupon_code').prop('placeholder', 'SYNC SQUAD CODE');

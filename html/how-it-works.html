@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block header_class %}header-expanded slidepanel top{% endblock %}
+{% block header_bg_img %}data-width="1437" data-height="763" data-barley="index_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/banner-expanded-theme-3.jpg' | asset_url }}');"{% endblock %}
+{% block header_content %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+    <h2>How It Works</h2>
+    <div class="subpage content">
+        <h3 class="bold">SYNC (StuffYouNeedCheap) takes the think out of the stink.</h3>
+        <h3>You’re young, and let’s face it - you’ve done some unmentionable things to substitute for clean socks and briefs:</h3>
+        <h3>
+            <ul style="list-style: circle inside;">
+                <li>Mis-matched your smelly socks</li>
+                <li>Lost that other sock</li>
+                <li>Gone commando when you’re out of clean briefs</li>
+                <li>Gone 3 days+ in a row wearing the same briefs (you know you’ve done it)</li>
+                <li>Settled for boring briefs and plain socks</li>
+            </ul>
+        </h3>
+        <h3>You know you need some game with fresh styles, but sweet socks are $14 per pair and briefs are $20, so how do you build your rep without breaking the bank?</h3>
+
+        <h3 class="bold">Sign up for a subscription with SYNC and we’ll send you a monthly box full of 3 pairs of either briefs or socks.  One month you’ll receive 3 pairs of briefs and the next month you’ll get 3 pairs of socks in game-changing designs.  All for $18 per month with FREE SHIPPING!</h3>
+
+        <h3>Sign up now and you’ll receive your first delivery around September 1, so you’ll be The Guy back at school this Fall. Cancel anytime (but seriously, why would you?)</h3>
+        <div class="subscribe top-25">
+            <a href="/subscribe/"><button class="custom bold">SUBSCRIBE NOW</button></a>
+        </div>
+
+        <div class="row gray center top-25">
+            <h5><em>Check out some of our first designs...</em></h5>
+        </div>
+    </div>
+</div>
+<div class="row top-25">
+    <div class="four columns center line"></div>
+    <div class="how-it-works-samples row center">
+        <img class="briefs" src="{{ 'images/briefs4back.png' | asset_url }}"></img>
+        <img class="socks" src="{{ 'images/sock1.png' | asset_url }}"></img>
+        <img class="briefs" src="{{ 'images/briefs1back.png' | asset_url }}"></img>
+        <img class="socks" src="{{ 'images/sock2.png' | asset_url }}"></img>
+        <img class="briefs" src="{{ 'images/briefs2back.png' | asset_url }}"></img>
+        <img class="socks" src="{{ 'images/sock3.png' | asset_url }}"></img>
+        <img class="briefs" src="{{ 'images/briefs3back.png' | asset_url }}"></img>
+    </div>
+    <div class="four columns center line"></div>
+</div>
+
+<div class="subscribe top-50 content">
+    <a href="/subscribe/"><button class="custom bold">SUBSCRIBE NOW</button></a>
+</div>
+
+{% endblock %}

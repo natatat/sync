@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block header_class %}header-expanded slidepanel top{% endblock %}
+{% block header_bg_img %}data-width="1437" data-height="763" data-barley="index_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/banner-expanded-theme-3.jpg' | asset_url }}');"{% endblock %}
+{% block header_content %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+    <h2>Sync Squad</h2>
+    <div class="subpage content">
+        <h3 class="bold">You like what you see?  You want to be a spokesperson for StuffYouNeedCheap.com?  You can share the good news of our under-things transformation with your friends and family – and MAKE COIN.</h3>
+
+        <h3>If you want to Join the Squad – send us an email at (<a href="mailto:getinsync@stuffyouneedcheap.com">getinsync@stuffyouneedcheap.com</a>) telling us why you want to rep our hallowed name.  If it’s a fit, we’ll send you an email congratulating you along with a code that is your's.  You pass that code on to your friends that want to sign up for a SYNC subscription and that’s it!  Every 10 subscribers that join the SYNC family you get $$$!</h3>
+
+        <h5 class="bold">Here’s how it works:</h5>
+        <div class="row">
+            <div class="eight columns">
+                <div class="six columns">
+                    <p>First 10 subscribers</p>
+                    <p>20+ subscribers</p>
+                    <p>30+ subscribers</p>
+                    <p>40+ subscribers</p>
+                    <p>50+ subscribers</p>
+                    <p>60+ subscribers</p>
+                    <p>70+ subscribers</p>
+                </div>
+                <div class="six columns">
+                    <p>You get 6 months SYNC subscription FREE</p>
+                    <p>$5 for every new member ($50)</p>
+                    <p>$7 for every new member ($70)</p>
+                    <p>$9 for every new member ($90)</p>
+                    <p>$11 for every new member ($110)</p>
+                    <p>$13 for every new member ($130)</p>
+                    <p>$15 for every new member ($150)</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="bold">Basically, if you can get 70 of your friends and family to sign up for StuffYouNeedCheap, you pocket $600 AND a free 6-month subscription.</h3>
+    </div>
+</div>
+
+{% endblock %}

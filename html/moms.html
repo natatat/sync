@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header_class %}header-expanded slidepanel top{% endblock %}
+{% block header_bg_img %}data-width="1437" data-height="763" data-barley="index_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/banner-expanded-theme-3.jpg' | asset_url }}');"{% endblock %}
+{% block header_content %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+    <div class="subpage content">
+        <h5 class="bold">Hey Moms –</h5>
+
+        <h3>Yeah, we see you there - hanging out, wondering why you need to be buying your loved one SYNC stuff when you already buy him perfectly fine socks and briefs. No offense mom, but he needs cooler stuff, and you can buy it all here. Even if he still won’t do his laundry (we’re not miracle workers), at least he will be wandering the campus in clean and stylish briefs and socks. Just buy SYNC. And worry less. <span class="bold"><em>$18 per month for a little peace of mind...</em></span></h3>
+
+        <div class="subscribe top-25">
+            <a href="/subscribe"><button class="custom bold">GIVE SYNC NOW!</button></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

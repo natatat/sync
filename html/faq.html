@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block header_class %}header-expanded slidepanel top{% endblock %}
+{% block header_bg_img %}data-width="1437" data-height="763" data-barley="index_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/banner-expanded-theme-3.jpg' | asset_url }}');"{% endblock %}
+{% block header_content %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+    <div class="subpage content">
+        <h5 class="bold">FAQ</h5>
+        <ol>
+            <li>Is there really only one subscription plan?</li>
+            <ol class="upper-alpha">
+                <li>Yep -- we have worked very hard to come up with a price point that allows us to send you 3 pairs of socks or underwear with FREE SHIPPING, and to do that, we’re sending you 3 limited edition designs in each box.  But you can rest assured that you're getting great quality and great designs -- at a great price.</li>
+            </ol>
+
+            <li>So I don’t get to choose the styles I receive?</li>
+            <ol class="upper-alpha">
+                <li>
+                    Sorry, but no  – we have a great design team that solicits feedback from lots of college-age guys and we work really hard to produce the freshest styles that will be relevant to you.
+                </li>
+            </ol>
+
+            <li>When do I receive the shipment?</li>
+            <ol class="upper-alpha">
+                <li>
+                Our first shipment will be in early September of 2015, and every month approximately 30 days after that.  The September shipment will be a BRIEFS shipment and the October shipment will be a SOCKS shipment.  Every month will alternate between the two products.
+                </li>
+            </ol>
+
+
+            <li>What if I change addresses (like move from the dorm to my home) during the year?</li>
+            <ol class="upper-alpha">
+                <li>
+                No problem – just let us know when your address is changing and we’ll reroute your SYNC box to your correct address.
+                </li>
+            </ol>
+
+
+            <li>What if I want to cancel SYNC?</li>
+            <ol class="upper-alpha">
+                <li>
+                What?  Unimaginable, but since we're all about that feel-good, you can cancel anytime.  You can read about the specifics HERE, but we're easy, as we want you to be stoked.
+                </li>
+            </ol>
+
+
+            <li>How long is my subscription?</li>
+            <ol class="upper-alpha">
+                <li>
+                When you sign up with SYNC, you are signing up for a year.  However, we do not bill you for the entire year upfront; instead, we will bill you $18.00 per month, so you can spend the parental's allowance without a shock to the system.
+                </li>
+            </ol>
+
+
+            <li>I really don't like one of the styles I received -- can you send me another one?</li>
+            <ol class="upper-alpha">
+                <li>
+                Seriously?  Every pair of briefs/socks is just $6 -- if you don't like one of the styles -- just wait -- you have more coming.
+                </li>
+            </ol>
+
+
+            <li>How can I join the SYNC Squad?</li>
+            <ol class="upper-alpha">
+                <li>
+                Easily done -- sign up <a href="mailto:getinsync@stuffyouneedcheap.com">HERE</a> and we'll send you a code.  You pass the code onto your friends to sign up for a SYNC subscription and you automatically get credited for each sign up.  And you're making bank like a boss.
+                </li>
+            </ol>
+        </ol>
+        <div class="subscribe top-25">
+            <a href="/subscribe/"><button class="custom bold">SUBSCRIBE NOW</button></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

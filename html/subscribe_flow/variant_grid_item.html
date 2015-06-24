@@ -7,9 +7,8 @@
 {% endif %}
 <div class="col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 {{ col_width }}">
   <section class="box-choose subscribe">
-    <figure data-barley="variant_value.{{ value.id }}.img" data-barley-editor="image-logo">{{ value | object_img_tag }}</figure>
-  	<h4 data-barley="variant_value.{{ value.id }}.value" data-barley-editor="simple">{{ value.value }}</h4>
-  	<p data-barley="variant_value.{{ value.id }}.description" data-barley-editor="simple">{{ value.description | default("Variant description placeholder text", true) }}</p>
+    <!-- <figure data-barley="variant_value.{{ value.id }}.img" data-barley-editor="image-logo">{{ value | object_img_tag }}</figure> -->
+  	<h3 class="green bold" data-barley="variant_value.{{ value.id }}.value" data-barley-editor="simple">{{ value.value }}</h3>
     <a type="button" class="btn btn-primary fullsize" href="{{ product | product_subscribe_url(chosen_values, value, gift=gift) }}" data-barley="{{ value.id }}.sub_button_text" data-barley-editor="linkedit">SUBSCRIBE</a>
   </section>
 </div>
